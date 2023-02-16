@@ -1,0 +1,13 @@
+li{
+  color: #FF6060;
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  color: #FF6060
+  ;
+}
