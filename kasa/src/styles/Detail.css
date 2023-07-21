@@ -1,0 +1,138 @@
+.Detail{
+  color: #ff6060;
+  width: 90%;
+  margin: auto;
+}
+
+.imgContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.pictures{
+  height: 415px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 15px;
+}
+
+.imgCaroussel{
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn{
+  width: 100px;
+  height: 100px;
+  background: none;
+  border: none;
+}
+
+.btnPrec{
+  background-image: url(../assets/chevron-bas.png);
+  transform: rotate(90deg);
+  position: relative;
+  left: 10%;
+  z-index: 999;
+}
+
+.btnSuiv{
+  background-image: url(../assets/chevron-bas.png);
+  transform: rotate(-90deg);
+  position: relative;
+  left: -10%;
+  z-index: 999;
+}
+
+.DetailTextContainer{
+  width: 90%;
+  margin: auto;
+}
+
+.headerDesc{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.headerDesc p{
+  margin: 0;
+}
+
+.hostInfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hostImg{
+  width: 100px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.addInfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tagsList{
+  width: 26%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.tagsList li{
+  list-style: none;
+  background: #ff6060;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.rating{
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating img{
+  width: 50px;
+}
+
+.descItems{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.descText, .descEquip{
+  width: 40%;
+}
+
+.descText h2, .descEquip h2{
+  color: white;
+}
+
+.descText > div, .descEquip > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff6060;
+  height: 50px;
+  padding: 0 10px;
+  border-radius: 15px;
+}

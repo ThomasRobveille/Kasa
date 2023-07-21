@@ -1,14 +1,31 @@
 import React from 'react';
 
 import Header from '../components/Header';
-import List from '../components/List';
+import Card from '../components/Card';
+
+import '../styles/Home.css';
+
+import data from '../data/data.json';
 
 export default function Home(){
-    return(
-      <div>
-        <Header/>
-        <List/>
-        <p>Home</p>
+   return(
+    <div>
+      <Header/>
+      <div className='boxBanniere'>
+        <div className='banniere'>
+          <h2>Chez vous, partout et ailleurs</h2>
+        </div>
       </div>
-    );
+      <div className='listHouse'>
+        {
+          data.map((item, index) => {
+            return(
+              <Card key={index} data={item}/>
+            )
+          })
+        }
+      </div>
+      
+    </div>
+  );
 }
