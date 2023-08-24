@@ -4,11 +4,17 @@
   margin: auto;
 }
 
+.linkHome{
+  display: none;
+}
+
 .imgContainer{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 85%;
+  margin: auto;
 }
 
 .pictures{
@@ -18,6 +24,14 @@
   overflow: hidden;
   margin: auto;
   border-radius: 15px;
+}
+
+.cardImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: 0 10px;
 }
 
 .imgCaroussel{
@@ -33,7 +47,6 @@
 }
 
 .btnPrec{
-  background-image: url(../assets/chevron-bas.png);
   transform: rotate(90deg);
   position: relative;
   left: 10%;
@@ -41,7 +54,6 @@
 }
 
 .btnSuiv{
-  background-image: url(../assets/chevron-bas.png);
   transform: rotate(-90deg);
   position: relative;
   left: -10%;
@@ -53,15 +65,52 @@
   margin: auto;
 }
 
-.headerDesc{
+.headerInfo{
+  height: 230px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 10px 0;
 }
 
-.headerDesc p{
-  margin: 0;
+.headerInfoLeft, .headerInfoRight{
+  width: 45%;
+  height: 200px;
+}
+
+.headerInfoLeft, .headerInfoRight{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.headerInfoLeft{
+  align-items: flex-start;
+}
+
+.headerInfoLeft h1{
+  text-align: left;
+}
+
+.headerInfoRight{
+  align-items: flex-end;
+}
+
+.tagsList{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+}
+
+.tagsList li{
+  list-style: none;
+  background: #ff6060;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-right: 10px;
 }
 
 .hostInfo{
@@ -83,28 +132,11 @@
   justify-content: space-between;
 }
 
-.tagsList{
-  width: 26%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-}
-
-.tagsList li{
-  list-style: none;
-  background: #ff6060;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 10px;
-}
-
 .rating{
   width: 20%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -116,10 +148,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 10px 0;
 }
 
 .descText, .descEquip{
   width: 40%;
+  height: 50px;
+  overflow: hidden;
 }
 
 .descText h2, .descEquip h2{
@@ -127,6 +162,7 @@
 }
 
 .descText > div, .descEquip > div{
+  width: 92%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -136,3 +172,97 @@
   padding: 0 10px;
   border-radius: 15px;
 }
+
+.descDetail{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.descText{
+  align-items: flex-start;
+}
+
+.descEquip{
+  align-items: flex-end;
+}
+
+.descDetail p{
+  width: 93%;
+  text-align: left;
+  margin: 5px 0;
+}
+
+.open{
+  height: 200px;
+}
+
+.rotate{
+  transform: rotate(0deg);
+}
+
+@media screen and (max-width: 768px){
+  .Detail{
+    width: 100%;
+  }
+
+  .headerInfo{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .headerInfoLeft{
+    width: 100%;
+  }
+
+  .headerInfoRight{
+    width: 100%;
+    height: auto;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .hostImg{
+    width: 50px;
+  }
+
+  .rating{
+    width: auto
+  }
+
+  .rating img{
+    width: 25px;
+  }
+
+  .imgContainer{
+    width: 100%;
+  }
+
+  .btn img{
+    width: 50px;
+  }
+
+  .pictures{
+    height: 300px;
+  }
+
+  .cardImg{
+    margin: 0 5px;
+  }
+
+  .imgCaroussel{
+    width: 300px;
+    height: 255px;
+  }
+
+  .descItems{
+    flex-direction: column;
+  }
+
+  .descBox{
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+  

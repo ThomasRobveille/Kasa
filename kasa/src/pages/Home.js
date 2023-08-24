@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from '../components/Header';
 import Card from '../components/Card';
+import Footer from '../components/Footer';
 
 import '../styles/Home.css';
 
@@ -25,7 +26,7 @@ export default function Home(){
           })
         }
       </div>
-      
+      <Footer/>
     </div>
   );
 }

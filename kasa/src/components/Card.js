@@ -11,6 +11,7 @@ export default function Card(props){
   }
   return (
     <div className='card' onClick={() => goDetail(props.data.id)}>
+      <img src={props.data.cover} alt={props.data.title}/>
       <p>{props.data.title}</p>
     </div>
   )

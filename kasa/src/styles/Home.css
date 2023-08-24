@@ -26,3 +26,29 @@
   padding: 0 30px;
   border-radius: 25px;
 }
+
+@media screen and (max-width: 768px){
+  .banniere{
+    height: 150px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  h2{
+    font-weight: 400;
+    width: 60%;
+    text-align: initial;
+    margin: 30px;
+  }
+
+  .listHouse{
+    flex-direction: column;
+    padding: 0;
+    margin: -30px auto;
+  }
+
+  .card{
+    width: 100%;
+    margin: 10px 0;
+  }
+}

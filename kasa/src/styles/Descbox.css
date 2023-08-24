@@ -1,20 +1,3 @@
-.imgBaniere {
-  width: 95%;
-  height:300px;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.aboutPoint{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 47px;
-  overflow: hidden;
-  margin-top: 20px;
-  transition: all 0.5s ease-in-out;
-}
-/*
 .headerPoint{
   width: 85%;
   height: 47px;
@@ -40,6 +23,8 @@
   font-size: 24px;
   background: #f6f6f6;
   text-align: left;
+  margin: 0;
+  width: 87%;
 }
 
 .chevron{
@@ -54,14 +39,4 @@
 
 .rotate{
   transform: rotate(0deg);
-} */
-
-@media screen and (max-width: 768px) {
-  .open{
-    height: 300px!important
-  }
-
-  .description p {
-    font-size: 16px;
-  }
 }

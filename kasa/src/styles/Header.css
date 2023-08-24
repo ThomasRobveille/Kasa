@@ -4,6 +4,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 2.5rem 20px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 ul{
@@ -26,4 +28,14 @@ a{
 a:visited{
   color: #FF6060
   ;
+}
+
+@media screen and (max-width: 768px){
+  .logoHeader{
+    width: 40%
+  }
+
+  ul{
+    width: 50%;
+  }
 }

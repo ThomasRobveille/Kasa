@@ -9,9 +9,21 @@
   background-color: #ff6060;
   color: white;
   border-radius: 10px;
+  overflow: hidden;
 }
 
-p{
+.card img{
+  width: 200%;
+  height: 120%;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+  top: 53px;
+}
+
+.card p{
   margin-left: 10px;
   text-align: left;
+  z-index: 99;
+  text-shadow: 1px 1px 10px black;
 }

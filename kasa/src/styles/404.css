@@ -16,3 +16,13 @@
 .errorLink{
   text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+  .errorImg{
+    width: 200px
+  }
+
+  .errorBody{
+    height: 56vh;
+  }
+}

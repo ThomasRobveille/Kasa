@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 import "../styles/404.css";
 
@@ -11,10 +12,11 @@ export default function Home(){
         <div>
             <Header/>
             <div className='errorBody'>
-              <img src={logo404}/>
+              <img src={logo404} className='errorImg'/>
               <h2 className='errorText'>Oups la page que vous demandez n'est pas disponible</h2>
               <a className='errorLink' href='/'>Retour à la page d'accueil</a>
-            </div>            
+            </div>    
+            <Footer/>
         </div>
     );
 }
