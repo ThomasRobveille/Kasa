@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 
 import Home from './pages/Home';
@@ -16,10 +16,8 @@ function App() {
           <Route path="/about" element={<About/>}/>
           <Route path="/detail/:id" element={<Detail/>}/>
           <Route path="*" element={<Error/>}/>
-          <Route path="/404" element={<Error/>}/>
         </Routes>
-      </Router>
-      
+      </Router>      
     </div>
   );
 }

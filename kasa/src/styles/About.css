@@ -14,51 +14,14 @@
   margin-top: 20px;
   transition: all 0.5s ease-in-out;
 }
-/*
-.headerPoint{
-  width: 85%;
-  height: 47px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px ;
-  background: #ff6060;
-  color: white;
-  border-radius: 10px;
-}
-
-.description{
-  width: 85%;
-  padding: 0 20px;
-  background: #f6f6f6;
-  color: #ff6060;
-}
-
-.aboutPoint p{
-  color: #ff6060;
-  font-size: 24px;
-  background: #f6f6f6;
-  text-align: left;
-}
-
-.chevron{
-  width: 30px;
-  transform: rotate(180deg);
-  transition: all 0.5s ease-in-out;
-}
-
-.open{
-  height: 200px;
-}
-
-.rotate{
-  transform: rotate(0deg);
-} */
 
 @media screen and (max-width: 768px) {
   .open{
     height: 300px!important
+  }
+
+  .aboutPoint{
+    height: 60px;
   }
 
   .description p {

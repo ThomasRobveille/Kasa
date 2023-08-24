@@ -27,3 +27,15 @@
   z-index: 99;
   text-shadow: 1px 1px 10px black;
 }
+
+@media screen and (max-width: 768px){
+  .card img{
+    top: 75px;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .card img{
+    width: 300%;
+  }
+}

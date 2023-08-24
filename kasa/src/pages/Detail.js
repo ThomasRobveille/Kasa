@@ -6,7 +6,6 @@ import Error from './404'
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import DescBox from '../components/DescBox';
 import '../styles/Detail.css';
 import starColor from '../assets/starColor.png';
 import starGrey from '../assets/starGrey.png';
@@ -16,8 +15,6 @@ import data from '../data/data.json';
 
 export default function Detail(){
   const [imgPosition, setImgPosition] = useState(0);
-
-  // const navigate = useNavigate();
 
   const handleImgPosition = (plusMoins) => {
     let distance = document.querySelector('.imgCaroussel').clientWidth 
@@ -52,15 +49,6 @@ export default function Detail(){
 
   const { id } = useParams();
 
-  // let house = data.find((item) => {
-  //   if(item.id === id){
-  //     return item;
-  //   } else {
-  //     console.log('error');
-  //     LinkRef.current.click();
-  //   }
-  // })
-  
   const isIdPresent = data.some((item) => item.id === id);
   let house = data.find((item) => item.id === id);
 
@@ -70,19 +58,8 @@ export default function Detail(){
     });
   } else {
     console.log('error')
-    return <Navigate to='/404' replace={true}/>
+    return <Navigate to='*' replace={true}/>
   }
-
-  // if(house === undefined){
-  //   useNavigate404();
-  // }
-
-  // function useNavigate404(){
-  //   useEffect(() => {
-  //     navigate('/404');
-  //   }, []);
-  // }
-
 
   function imgPrec(){
     handleImgPosition('moins');
